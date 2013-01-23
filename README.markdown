@@ -26,7 +26,7 @@ And using coordination data in keycord.dat we can calculate a standard vector of
 
 > Vstandard = [x1, y1, x2, y2, x3, y3];
 
-Then <em>cosine(V, Vstandard)</em> and <em>|V| - |Vstandard|</em> are used for evaluation of likelyness between the two typing gestures. The rest is to pick the most-likely word for the typing gesture. 
+Then <em>cosine(V, Vstandard)</em> and <em>abs(|V| - |Vstandard|)</em> are used for evaluation of likelyness between the two typing gestures. The rest is to pick the most-likely word for the typing gesture. 
 
 TODOs
 ===
