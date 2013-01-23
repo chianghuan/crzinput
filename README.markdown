@@ -10,7 +10,7 @@ You may:
 
 1. Run BASH script <em>'gendict'</em> to generate <em>len(1..24).dict</em> files;
 
-2. Edit keycord.dat according to the layout of your keyboard UI, each line as a space-seperated tuple (char, x, y);
+2. Edit <em>keycord.dat</em> according to the layout of your keyboard UI, each line as a space-seperated tuple (char, x, y);
 
 3. Run <em>gendb.py</em> by [python 2.7](http://www.python.org)
 
@@ -26,7 +26,7 @@ And using coordination data in keycord.dat we can calculate a standard vector of
 
 > Vstandard = [x1, y1, x2, y2, x3, y3];
 
-Then cosine(V, Vstandard) and |V| - |Vstandard| are used for evaluation of likelyness between the two typing gestures. The rest is to pick the most-likely word for the typing gesture. 
+Then <em>cosine(V, Vstandard)</em> and <em>|V| - |Vstandard|</em> are used for evaluation of likelyness between the two typing gestures. The rest is to pick the most-likely word for the typing gesture. 
 
 TODOs
 ===
@@ -38,3 +38,4 @@ TODOs
 3. UX and UI optimization;
 
 4. Various languages support.
+
