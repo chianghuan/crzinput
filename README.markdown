@@ -30,4 +30,12 @@ Then cosine(V, Vstandard) and |V| - |Vstandard| are used for evaluation of likel
 
 Future Work
 ===
-A lot.
+A lot to be done.
+
+1. Index the dictionary to speedup matching process;
+
+2. UX and UI optimization;
+
+3. Reducing the number of words in the dictionary, eliminates unusual words, to speedup and increase accuracy;
+
+4. Make various languages support =)
