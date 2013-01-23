@@ -1,0 +1,9 @@
+#!/bin/bash
+
+length=`./longest`
+echo $length
+for i in `seq $length`
+do
+    filename="len$i.dict"
+    cat /usr/share/dict/words | egrep "^[a-zA-Z]{$i}\$" | tr 'A-Z' 'a-z' | awk ' { if ($0 != Last) { Last = $0; print $0 } }' > $filename
+done

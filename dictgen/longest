@@ -1,0 +1,3 @@
+#!/bin/bash
+
+awk ' { if ( length > L ) { L = length } } END { print L } ' /usr/share/dict/words

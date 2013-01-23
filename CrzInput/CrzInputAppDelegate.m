@@ -1,12 +1,14 @@
 //
 //  CrzInputAppDelegate.m
-//  CrzInput
+//  crzinput_ios
 //
-//  Created by huanjiang on 13-1-24.
+//  Created by huanjiang on 13-1-23.
 //  Copyright (c) 2013年 huanjiang. All rights reserved.
 //
 
 #import "CrzInputAppDelegate.h"
+
+#import "CrzInputView.h"
 
 @implementation CrzInputAppDelegate
 
@@ -16,6 +18,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIView *inputView = [[CrzInputView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window addSubview:inputView];
+    
     return YES;
 }
 
@@ -27,7 +33,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
