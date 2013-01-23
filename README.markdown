@@ -32,10 +32,10 @@ Future Work
 ===
 A lot to be done.
 
-1. Index the dictionary to speedup matching process;
+1. Make the dictionary thinner, to increase accuracy(exclude unusual words), and to reduce searching/matching time;
 
-2. UX and UI optimization;
+2. Index the dictionary to speedup matching process;
 
-3. Reducing the number of words in the dictionary, eliminates unusual words, to speedup and increase accuracy;
+3. UX and UI optimization;
 
-4. Make various languages support =)
+4. Various languages support =)
